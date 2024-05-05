@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:color="@color/lv5"
+        android:width="2dp"/>
+    <corners android:radius="1000dp"/> <!-- Sử dụng bán kính lớn để tạo ra hình tròn -->
+</shape>

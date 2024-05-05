@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_food"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@drawable/boder_bottom"
+                android:backgroundTint="@color/lv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btn_cancel_af1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="64dp"
+                    android:background="@color/lv2"
+                    android:src="@drawable/cancel"
+                    android:tint="@color/lv5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_newfood"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.181" />
+
+                <TextView
+                    android:id="@+id/tv_newfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/itim"
+                    android:text="Create new food"
+                    android:textAlignment="center"
+                    android:textColor="@color/lv5"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.502"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.189" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/distance_lv3"
+                android:layout_marginTop="80dp"
+                android:layout_marginEnd="@dimen/distance_lv3"
+                android:background="@drawable/border1"
+
+                android:elevation="@dimen/distance_lv4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/distance_LR"
+                    android:fontFamily="@font/itim"
+                    android:text="Basic Information"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="10dp" />
+
+                <EditText
+                    android:id="@+id/ed_namefood"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/distance_LR"
+                    android:layout_marginTop="@dimen/distance_small2"
+                    android:layout_marginEnd="@dimen/distance_LR"
+                    android:fontFamily="@font/itim"
+                    android:hint="Name of food"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/distance_LR"
+                    android:layout_marginTop="@dimen/distance_small2"
+                    android:layout_marginEnd="@dimen/distance_LR"
+                    android:layout_marginBottom="@dimen/distance_small2"
+                    android:fontFamily="@font/itim"
+                    android:hint="Barcode"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_namefood" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginTop="@dimen/distance_lv5"
+                android:background="@drawable/border1"
+                android:elevation="@dimen/distance_lv1"
+                android:paddingBottom="@dimen/distance_lv1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/itim"
+                    android:text="Serving"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/itim"
+                    android:text="Name of serving"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+                <EditText
+                    android:id="@+id/ed_nameserving"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginTop="@dimen/distance_small2"
+                    android:fontFamily="@font/itim"
+                    android:hint="e.g.box, bottle(required)"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv2"
+                    android:fontFamily="@font/itim"
+                    android:text="1 Serving"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_nameserving" />
+
+                <EditText
+                    android:id="@+id/ed_oneserving"
+                    android:layout_width="157dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/itim"
+                    android:hint="100"
+                    android:inputType="number"
+                    android:textColor="@color/lv1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.884"
+                    app:layout_constraintStart_toEndOf="@+id/textView7"
+                    app:layout_constraintTop_toBottomOf="@+id/ed_nameserving" />
+
+                <RadioButton
+                    android:id="@+id/btn_grams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:paddingHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/border1"
+                    android:backgroundTint="@color/lv1"
+                    android:fontFamily="@font/itim"
+                    android:text="grams"
+                    android:elevation="@dimen/distance_small1"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <RadioButton
+                    android:id="@+id/btn_mililiter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv4"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:background="@drawable/border1"
+                    android:backgroundTint="@color/lv1"
+                    android:fontFamily="@font/itim"
+                    android:text="mililiter"
+                    android:textColor="@color/white"
+                    android:elevation="@dimen/distance_small1"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+                <ImageView
+                    android:layout_width="49dp"
+                    android:layout_height="68dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_marginEnd="16dp"
+                    android:src="@drawable/serving"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_continue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/distance_lv3"
+                android:backgroundTint="@color/lv2"
+                android:elevation="@dimen/distance_lv1"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Continue"
+                android:textColor="@color/lv5"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.531"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

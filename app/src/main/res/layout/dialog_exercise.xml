@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/lv2"
+    android:background="@drawable/border1"
+    android:elevation="@dimen/distance_lv1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/distance_lv3"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/white"
+        android:elevation="@dimen/distance_lv1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_nameExercise_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="name Exercise"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_cancel_dialogExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@color/white"
+            android:src="@drawable/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_kcal_exercise_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/itim"
+            android:text="Exercise kcal"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameExercise_dialog" />
+
+        <TextView
+            android:id="@+id/txt_time_exercise_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:layout_marginStart="18dp"
+            android:fontFamily="@font/itim"
+            android:text="time"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toEndOf="@+id/txt_kcal_exercise_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameExercise_dialog" />
+
+
+        <RadioButton
+            android:id="@+id/radioBtn_min"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:layout_marginStart="16dp"
+            android:fontFamily="@font/itim"
+            android:text="min"
+            android:textAlignment="center"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_kcal_exercise_dialog" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Time"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioBtn_min" />
+
+        <Button
+            android:id="@+id/btn_add_exercise_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:backgroundTint="@color/lv2"
+            android:fontFamily="@font/itim"
+            android:text="Add to Diary"
+            android:textSize="@dimen/text_smail_size2"
+            android:textColor="@color/lv5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_time_dialog" />
+
+        <EditText
+            android:id="@+id/txt_time_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:layout_marginHorizontal="@dimen/distance_lv10"
+            android:paddingVertical="@dimen/distance_small1"
+            android:text="60"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintEnd_toStartOf="@+id/btn_add_time_dialog"
+            app:layout_constraintStart_toEndOf="@+id/btn_minus_time_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <ImageButton
+            android:id="@+id/btn_minus_time_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv2"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:src="@drawable/minus"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <ImageButton
+            android:id="@+id/btn_add_time_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv2"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

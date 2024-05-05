@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Miniproject"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity android:name="com.example.miniproject.activity.LogIn" />
+        <activity android:name="com.example.miniproject.activity.displayuser" />
+        <activity android:name=".activity.MainActivity"/>
+        <activity android:name=".activity.getStart"/>
+        <activity android:name=".activity.signupActivity"/>
+        <activity android:name=".activity.information_1"/>
+        <activity android:name=".activity.information_2"/>
+        <activity android:name=".activity.user_result"/>
+        <activity android:name=".activity.add_food"/>
+        <activity android:name=".activity.add_food2"/>
+        <activity android:name=".activity.list_exercise"/>
+        <activity android:name=".activity.add_exercise"/>
+        <activity android:name=".activity.updateInformation"/>
+        <activity android:name=".activity.update_BMR"/>
+        <activity android:name=".activity.nutrition_setting"/>
+        <activity android:name=".activity.generate_new_schedule"/>
+        <activity android:name=".activity.information_food"/>
+        <activity android:name=".activity.start"
+            android:theme="@style/Base.ThemeSpl"
+            android:exported="true">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

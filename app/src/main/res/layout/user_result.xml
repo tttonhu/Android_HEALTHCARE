@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_infor"
+                android:backgroundTint="@color/lv2"
+                android:fontFamily="@font/itim"
+                android:paddingVertical="@dimen/distance_lv2"
+                android:text="Your Result"
+                android:textAlignment="center"
+                android:textColor="@color/lv5"
+                android:textSize="@dimen/distance_lv5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:fontFamily="@font/itim"
+                android:text="Energy intake to maintain weight (TDEE+500)"
+                android:textColor="@color/lv1"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:background="@drawable/boder_r"
+                android:backgroundTint="@color/green"
+                android:elevation="@dimen/distance_lv1"
+                android:paddingVertical="@dimen/distance_lv2"
+                app:layout_constraintTop_toBottomOf="@+id/textView53"
+                tools:layout_editor_absoluteX="20dp">
+
+                <TextView
+                    android:id="@+id/textView55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/handlee"
+                    android:text="Kcal/day"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_kcal_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/handlee"
+                    android:text="1234"
+                    android:textAlignment="center"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:fontFamily="@font/architects_daughter"
+                android:text="BMI"
+                android:textColor="@color/lv1"
+                android:textSize="@dimen/text_size"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout20" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@drawable/boder_r"
+                android:backgroundTint="@color/green"
+                android:elevation="@dimen/distance_lv1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView54">
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="BMI"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_BMI_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="AAA"
+                    android:textAlignment="center"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/distance_lv3"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toTopOf="@+id/textView38"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView23"
+                    app:layout_constraintVertical_bias="0.0" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="Height"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_BMI_Result" />
+
+                <TextView
+                    android:id="@+id/txt_height_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="40"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView38"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_BMI_Result" />
+
+
+                <TextView
+                    android:id="@+id/textView58"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv14"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:layout_marginTop="14dp"
+                    android:fontFamily="@font/handlee"
+                    android:text="Weight"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_BMI_Result" />
+
+                <TextView
+                    android:id="@+id/txt_weight_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="40"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/textView58"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_BMI_Result" />
+
+                <TextView
+                    android:id="@+id/textView59"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="Body Condition"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView38" />
+
+                <TextView
+                    android:id="@+id/txt_condition_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:text="Thieu can"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    app:layout_constraintStart_toEndOf="@+id/textView59"
+                    app:layout_constraintTop_toBottomOf="@+id/textView58" />
+
+                <ImageView
+                    android:id="@+id/imageView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv12"
+                    android:layout_marginVertical="@dimen/distance_lv2"
+                    android:src="@drawable/clock"
+                    app:layout_constraintStart_toEndOf="@+id/textView23"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_day_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/handlee"
+                    android:text="25/02/2024"
+                    android:layout_marginVertical="@dimen/distance_lv2"
+                    android:layout_marginHorizontal="@dimen/distance_lv3"
+                    android:textColor="@color/brown"
+                    android:textSize="@dimen/text_smail_size2"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@+id/imageView15"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Drink Water"
+                android:textColor="@color/lv1"
+                android:textSize="@dimen/text_size"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout15" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@drawable/boder_r"
+                android:backgroundTint="@color/green"
+                android:elevation="@dimen/distance_lv1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView56">
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="Daily goal drink water"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/txt_water_Result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="1950"
+                    android:textColor="@color/red2"
+                    android:textSize="@dimen/title_size"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView40" />
+
+                <ImageView
+                    android:id="@+id/imageView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:tint="@color/black"
+                    android:src="@drawable/clock"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_water_Result" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:fontFamily="@font/handlee"
+                    android:text="Last drink"
+                    android:textColor="@color/brown"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintStart_toEndOf="@+id/imageView16"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_water_Result" />
+
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_continue_Result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:backgroundTint="@color/lv2"
+                android:fontFamily="@font/architects_daughter"
+                android:text="Continue"
+                android:textAlignment="center"
+                android:textColor="@color/lv5"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout16" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</FrameLayout>

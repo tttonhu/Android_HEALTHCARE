@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/abel</item>
+        <item>@font/alatsi</item>
+        <item>@font/amiri</item>
+        <item>@font/architects_daughter</item>
+        <item>@font/arsenal</item>
+        <item>@font/autour_one</item>
+        <item>@font/bahiana</item>
+        <item>@font/balthazar</item>
+        <item>@font/cabin</item>
+        <item>@font/handlee</item>
+        <item>@font/inria_serif_light</item>
+        <item>@font/itim</item>
+    </array>
+</resources>

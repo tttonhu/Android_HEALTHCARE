@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lv5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout12"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@drawable/boder_bottom"
+        android:backgroundTint="@color/lv2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btn_cancel_anexercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="28dp"
+            android:background="@color/lv2"
+            android:src="@drawable/cancel"
+            android:tint="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="Add new exercise"
+            android:textColor="@color/lv5"
+            android:textSize="@dimen/title_size"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.308"
+            app:layout_constraintStart_toEndOf="@+id/btn_cancel_anexercise"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/bike"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout12" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/distance_lv4"
+        android:layout_marginVertical="@dimen/distance_lv1"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/lv2"
+        android:elevation="@dimen/distance_lv3"
+        android:paddingBottom="@dimen/distance_lv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.55"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView11">
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv5"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Name Exercise"
+            android:textColor="@color/lv5"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/ed_exercise_name"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginHorizontal="@dimen/distance_lv2"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:background="@drawable/solid"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/architects_daughter"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/txt_error_nameExer_addNewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/cabin"
+            android:text="Error name exercise"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small_size"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_exercise_name" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:layout_marginHorizontal="@dimen/distance_lv5"
+            android:fontFamily="@font/itim"
+            android:text="Exercise Kcal"
+            android:textColor="@color/lv5"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_error_nameExer_addNewExercise" />
+
+        <EditText
+            android:id="@+id/ed_kcal_exercise"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginHorizontal="@dimen/distance_lv2"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:background="@drawable/solid"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/architects_daughter"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.452"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/txt_error_kcalExer_addNewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/cabin"
+            android:text="Error name exercise"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small_size"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_kcal_exercise" />
+
+
+        <TextView
+            android:id="@+id/texttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv5"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Time"
+            android:textColor="@color/lv5"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_error_kcalExer_addNewExercise" />
+
+        <EditText
+            android:id="@+id/ed_exercise_time"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:layout_marginHorizontal="@dimen/distance_lv2"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:background="@drawable/solid"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/architects_daughter"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.372"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texttime" />
+
+        <TextView
+            android:id="@+id/txt_error_timeExer_addNewExercise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/cabin"
+            android:text="Error name exercise"
+            android:textColor="@color/red"
+            android:textSize="@dimen/text_small_size"
+            android:visibility="invisible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_exercise_time" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_exercise_add"
+        android:layout_width="151dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/lv1"
+        android:fontFamily="@font/itim"
+        android:text="Add"
+        android:textColor="@color/lv5"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout13" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

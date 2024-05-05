@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView51"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_infor"
+        android:fontFamily="@font/itim"
+        android:paddingVertical="@dimen/distance_lv2"
+        android:text="Your goal"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/distance_lv5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/distance_lv3"
+        android:fontFamily="@font/itim"
+        android:text="What is your goal ?"
+        android:textColor="@color/lv2"
+        android:textSize="@dimen/text_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+    <RadioButton
+        android:id="@+id/btn_lose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/distance_lv1"
+        android:layout_marginHorizontal="@dimen/distance_lv2"
+        android:layout_marginVertical="@dimen/distance_lv3"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/lv4"
+        android:button="@drawable/custom_radio_button_selector"
+        android:elevation="5dp"
+        android:fontFamily="@font/handlee"
+        android:text="Lose Weight - Manage your weight set up"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/distance_lv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+    <RadioButton
+        android:id="@+id/btn_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/distance_lv1"
+        android:layout_marginHorizontal="@dimen/distance_lv2"
+        android:layout_marginVertical="@dimen/distance_lv8"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/lv4"
+        android:elevation="5dp"
+        android:button="@drawable/custom_radio_button_selector"
+        android:fontFamily="@font/handlee"
+        android:text="Main Weight - Optimize your well-being"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/distance_lv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_lose" />
+
+    <RadioButton
+        android:id="@+id/btn_gain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/distance_lv1"
+        android:layout_marginHorizontal="@dimen/distance_lv2"
+        android:layout_marginVertical="@dimen/distance_lv8"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/lv4"
+        android:elevation="5dp"
+        android:fontFamily="@font/handlee"
+        android:button="@drawable/custom_radio_button_selector"
+        android:text="Gain Weight - Build strength with high"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/distance_lv3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_main" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

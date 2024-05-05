@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_food2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <ScrollView
+        android:id="@+id/scrollView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout23"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/distance_lv1"
+                android:background="@color/lv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btn_back_af2"
+                    android:layout_width="34dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="64dp"
+                    android:background="@color/lv2"
+                    android:src="@drawable/left"
+                    android:tint="@color/lv5"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/tv_newfood"
+                    app:layout_constraintHorizontal_bias="1.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.154" />
+
+                <TextView
+                    android:id="@+id/tv_newfood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/itim"
+                    android:text="Create new food"
+                    android:textAlignment="center"
+                    android:textColor="@color/lv5"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.158" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv14"
+                android:background="@color/gray"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayout2">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/distance_small2"
+                    android:layout_marginTop="@dimen/distance_small2"
+                    android:fontFamily="@font/itim"
+                    android:text="Nutrition Facts"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Serving Size: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.032"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/txt_servingSize_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="100g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Calories:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.023"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/txt_Kcal_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="kcal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView8"
+                    app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Total Fat: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/txt_fat_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView11"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/txt_Dlv_fat_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text=""
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Total Carbonhydate: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/txt_carbs_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView12"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/txt_Dlv_carbon_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Dietary Fiber: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/txt_fiber_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView13"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv5"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Sugar: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                <TextView
+                    android:id="@+id/txt_sugar_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView14"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_fiber_af2" />
+
+                <TextView
+                    android:id="@+id/textView65"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="Protein: "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/txt_protein_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_small1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="g"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toEndOf="@+id/textView65"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/txt_Dlv_protein_af2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="% Daily Value"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/txt_Kcal_af2" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="69dp"
+                    android:layout_height="75dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/avocado1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.839"
+                    app:layout_constraintStart_toEndOf="@+id/textView10"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/txt_nutrition_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                android:fontFamily="@font/itim"
+                android:text="Nutrititonal information per"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout22" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_nutrition_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:elevation="@dimen/distance_lv1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout22">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txtIPEdit_nutrition_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="Nutrition"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_kcal_add_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                android:text="Kcal"
+                android:fontFamily="@font/itim"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_nutrition_af2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_kcal_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_nutrition_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_kcal_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2"
+                    android:hint="gam"
+                    android:inputType="number"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_fat_add_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                android:fontFamily="@font/itim"
+                android:text="Fats"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_kcal_add_af2" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_fat_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_kcal_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_fat_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="gam"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/txt_protein_add_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                android:fontFamily="@font/itim"
+                android:text="Protein"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_fat_add_af2" />
+
+            <TextView
+                android:id="@+id/txt_carbs_add_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                android:fontFamily="@font/itim"
+                android:text="Carbs"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_protein_add_af2" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_carbs_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_protein_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_carbs_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="gam"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_protein_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_fat_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_protein_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="gam"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:fontFamily="@font/itim"
+                android:text="Addtional data"
+                android:textColor="@color/lv2"
+                android:textSize="@dimen/title_size"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_carbs_add_af2" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:fontFamily="@font/itim"
+                android:text="Fiber"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_fiber_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/distance_lv5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_carbs_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_fiber_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="gam"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv3"
+                android:fontFamily="@font/itim"
+                android:text="Sugar"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_smail_size3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView71" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/ed_sugar_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_fiber_af2">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/txt_IPEdit_sugar_af2"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:background="@drawable/boder"
+                    android:backgroundTint="@color/lv2"
+                    android:fontFamily="@font/itim"
+                    android:hint="gam"
+                    android:inputType="number"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_smail_size2" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_continue_af2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:backgroundTint="@color/lv2"
+                android:fontFamily="@font/itim"
+                android:text="Continue"
+                android:textColor="@color/lv5"
+                android:textSize="@dimen/text_size"
+                android:elevation="@dimen/distance_lv1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_sugar_af2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

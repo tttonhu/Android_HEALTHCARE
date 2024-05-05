@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout41"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lv2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageButton
+                    android:id="@+id/btn_back_inforFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:background="@color/lv2"
+                    android:src="@drawable/left"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/itim"
+                    android:text="Food Name"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/title_size"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:fontFamily="@font/itim"
+                android:text="Nutrition"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout41" />
+
+            <EditText
+                android:id="@+id/ed_number_inforFood"
+                android:layout_width="@dimen/distance_lv12"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@drawable/boder"
+                android:backgroundTint="@color/lv5"
+                android:elevation="@dimen/distance_lv1"
+                android:fontFamily="@font/itim"
+                android:inputType="number"
+                android:textSize="@dimen/text_size"
+                android:text="1"
+                android:textAlignment="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+            <TextView
+                android:textAlignment="center"
+                android:id="@+id/ed_nameserving_inforFood"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv10"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@drawable/boder"
+                android:backgroundTint="@color/lv5"
+                android:fontFamily="@font/itim"
+                android:textColor="@color/lv1"
+                android:elevation="@dimen/distance_lv1"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout35"
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:elevation="10dp"
+                app:cardCornerRadius="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ed_number_inforFood">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewGraph"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="@dimen/distance_lv2"
+                    android:layout_marginVertical="@dimen/distance_lv1"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="10dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+
+                            <com.github.mikephil.charting.charts.PieChart
+                                android:id="@+id/inforFood_chart"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout35">
+
+                <TextView
+                    android:id="@+id/txt_carbDly_inforFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/pastel_blue"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small2"
+                    android:layout_weight="1"
+                    android:text="TextView 1"
+                    android:fontFamily="@font/itim"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/txt_proDly_inforFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_weight="1"
+                    android:textColor="@color/pastel_pink"
+                    android:text="TextView 2"
+                    android:fontFamily="@font/itim"
+                    android:textSize="@dimen/text_size" />
+
+                <TextView
+                    android:id="@+id/txt_fatDly_inforFood"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:textColor="@color/pastel_green"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:fontFamily="@font/itim"
+                    android:layout_weight="1"
+                    android:text="TextView 3"
+                    android:textSize="@dimen/text_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tx_daily_goal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:fontFamily="@font/itim"
+                android:text="Daily Goal"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linearLayout5" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout42"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv1"
+                android:background="@drawable/border1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tx_daily_goal">
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ProgressBar
+                        android:id="@+id/pro_kcal"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/distance_lv1"
+                        android:layout_marginVertical="@dimen/distance_lv1"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressTint="@color/pastel_blue" />
+
+                    <ProgressBar
+                        android:id="@+id/pro_pro"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/distance_lv1"
+                        android:layout_marginVertical="@dimen/distance_lv1"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressTint="@color/pastel_pink" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_kcal_inforFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="77%kcal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                <TextView
+                    android:id="@+id/txt_protein_inforFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/itim"
+                    android:text="77%kcal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+                    <ProgressBar
+                        android:id="@+id/pro_carb"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/distance_lv1"
+                        android:layout_marginVertical="@dimen/distance_lv1"
+                        android:layout_weight="1"
+                        android:max="100"
+                        android:progress="0"
+                        android:progressTint="@color/pastel_blue" />
+
+                    <ProgressBar
+                        android:id="@+id/pro_fat"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="@dimen/distance_lv1"
+                        android:layout_marginVertical="@dimen/distance_lv1"
+                        android:layout_weight="1"
+                        android:max="100"
+
+                        android:progress="0"
+                        android:progressTint="@color/pastel_green" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txt_carb_inforFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/distance_lv1"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="77%kcal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+                <TextView
+                    android:id="@+id/txt_fat_inforFood"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="210dp"
+                    android:layout_marginVertical="@dimen/distance_small1"
+                    android:fontFamily="@font/itim"
+                    android:text="77%kcal"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_smail_size2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/btn_add_diary_inforFood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:backgroundTint="@color/lv2"
+                android:fontFamily="@font/itim"
+                android:text="Add to diary"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout42" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

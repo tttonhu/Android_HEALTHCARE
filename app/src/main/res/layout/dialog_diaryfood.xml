@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/distance_lv1"
+    android:background="@color/lv2"
+    android:paddingVertical="@dimen/distance_lv3"
+    android:elevation="@dimen/distance_lv1">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/distance_lv1"
+        android:background="@drawable/boder"
+        android:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txt_nameFood_dialogDiary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="name food"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btn_cancel_dialogDiaryFood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@color/white"
+            android:src="@drawable/cancel"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_food_type_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/itim"
+            android:text="food_type"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameFood_dialogDiary" />
+
+        <TextView
+            android:id="@+id/txt_food_kcal_Dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_small1"
+            android:fontFamily="@font/itim"
+            android:text="food kcal"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toEndOf="@+id/txt_food_type_Dialog"
+            app:layout_constraintTop_toBottomOf="@+id/txt_nameFood_dialogDiary" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Serving"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_food_type_Dialog" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_gam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="gam"
+            android:textAlignment="center"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv3"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="food_type"
+            android:textAlignment="center"
+            android:textColor="@color/lv2"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toEndOf="@+id/radioBtn_gam"
+            app:layout_constraintTop_toBottomOf="@+id/textView62" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Time"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioBtn_gam" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_Breakfast"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:paddingHorizontal="@dimen/distance_lv1"
+            android:textAlignment="center"
+            android:text="Breakfast"
+            android:textColor="@color/lv5"
+            android:button="@drawable/custom_radio_button_selector"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_lunch"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:textAlignment="center"
+            android:text="Lunch"
+            android:button="@drawable/custom_radio_button_selector"
+            android:textColor="@color/lv5"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioBtn_Breakfast"
+            app:layout_constraintTop_toBottomOf="@+id/textView64" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_Dinner"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:textSize="@dimen/text_smail_size2"
+            android:button="@drawable/custom_radio_button_selector"
+            android:textAlignment="center"
+            android:paddingHorizontal="@dimen/distance_lv1"
+            android:text="Dinner"
+            android:textColor="@color/lv5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioBtn_Breakfast" />
+
+        <RadioButton
+            android:id="@+id/radioBtn_Others"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:paddingHorizontal="@dimen/distance_lv1"
+            android:text="Others"
+            android:textColor="@color/lv5"
+            android:button="@drawable/custom_radio_button_selector"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_smail_size2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioBtn_Dinner"
+            app:layout_constraintTop_toBottomOf="@+id/radioBtn_Breakfast" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv1"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:fontFamily="@font/itim"
+            android:text="Amount"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioBtn_Dinner" />
+
+        <Button
+            android:id="@+id/btn_add_to_Diary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:backgroundTint="@color/lv1"
+            android:fontFamily="@font/itim"
+            android:text="Add to Diary"
+            android:textSize="@dimen/text_smail_size2"
+            android:textColor="@color/lv5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ed_amount_dialog" />
+
+        <EditText
+            android:id="@+id/ed_amount_dialog"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:background="@color/lv4"
+            android:fontFamily="@font/itim"
+            android:inputType="number"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="@color/lv1"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+        <ImageButton
+            android:id="@+id/btn_minus_amount_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv2"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:src="@drawable/minus"
+            app:layout_constraintEnd_toStartOf="@+id/ed_amount_dialog"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+        <ImageButton
+            android:id="@+id/btn_add_amount_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv2"
+            android:background="@drawable/boder"
+            android:backgroundTint="@color/lv4"
+            android:src="@drawable/add"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ed_amount_dialog"
+            app:layout_constraintTop_toBottomOf="@+id/textView66" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

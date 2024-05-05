@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">miniproject</string>
+    <string name="link"></string>
+    <string name="selected">Select Item</string>
+    <string name="required">Input Vaild</string>
+    <string name="Action_search">Search</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

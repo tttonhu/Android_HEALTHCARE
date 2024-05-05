@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#ffffff</color>
+    <color name="lv1">#608334</color>
+    <color name="lv1.5">#749C42</color>
+    <color name="lv2">#97B770</color>
+    <color name="lv3">#A8CA7E</color>
+    <color name="lv4">#CBDDB5</color>
+    <color name="lv6">#DBEAC9</color>
+    <color name="lv7">#EDF8DF</color>
+    <color name="lv5">#F7FEEf</color>
+    <color name="yl1">#EFDD3C</color>
+    <color name="yl2">#eeaa5b</color>
+    <color name="yl3">#eebc77</color>
+    <color name="yl4">#fbd796</color>
+    <color name="yl5">#ffeaae</color>
+    <color name="yl6">#EFEFBF</color>
+    <color name="gray">#FFC1C0C0</color>
+    <color name="green">#CBDDB5</color>
+    <color name="pastel_pink">#D7A49A</color>
+    <color name="pastel_green">#AFB796</color>
+    <color name="pastel_blue">#9DB6CF</color>
+    <color name="red">#DC143C</color>
+    <color name="gray1">#D9D9D9</color>
+    <color name="red2">#985454</color>
+    <color name="brown">#605151</color>
+</resources>

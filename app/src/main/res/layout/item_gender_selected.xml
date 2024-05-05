@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/lv1">
+    <TextView
+        android:id="@+id/txt_selected_gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/lv5"
+        android:background = "@color/lv1"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size"
+        android:layout_toStartOf="@id/img_drop_down"
+        android:paddingVertical="@dimen/distance_small2"
+        android:fontFamily="@font/architects_daughter"
+        />
+    <ImageView
+        android:id="@+id/img_drop_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/distance_lv1"
+        android:src="@drawable/drop_down"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        />
+
+</RelativeLayout>

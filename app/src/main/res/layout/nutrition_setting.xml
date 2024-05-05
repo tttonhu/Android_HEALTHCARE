@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".activity.nutrition_setting">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boder_bottom"
+        android:backgroundTint="@color/lv2"
+        android:paddingVertical="@dimen/distance_lv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageButton
+            android:id="@+id/btn_back_nutritionSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/distance_lv2"
+            android:background="@color/lv2"
+            android:src="@drawable/left"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/itim"
+            android:text="Nutrition setting"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout35"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:layout_below="@+id/layout_textview"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:elevation="10dp"
+        app:cardCornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/layout_textview">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewGraph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="@dimen/distance_lv2"
+            android:layout_marginVertical="@dimen/distance_lv1"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/nutrition_setting_chart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/distance_lv2"
+        android:layout_marginVertical="@dimen/distance_lv2"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout35">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout36"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/txtCarbon_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="Carbs"
+                android:textColor="@color/pastel_pink"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCarbon_g_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:fontFamily="@font/cabin"
+                android:text="288g g"
+                android:textColor="@color/pastel_pink"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/txtCarbon_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_carbon_de_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="40%"
+                android:textColor="@color/pastel_pink"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toStartOf="@+id/txt_carbonKcal_nutritionSetting"
+                app:layout_constraintStart_toEndOf="@+id/txtCarbon_g_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_carbonKcal_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="1152 kcal"
+                android:textColor="@color/pastel_pink"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/btn_minusCarbs_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:src="@drawable/minus"
+                android:tint="@color/pastel_pink"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCarbon_nutritionSetting" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Carbon"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:progressTint="@color/pastel_pink"
+                android:thumbTint="@color/pastel_pink"
+                app:layout_constraintStart_toEndOf="@+id/btn_minusCarbs_nutritionSetting"
+                app:layout_constraintEnd_toStartOf="@+id/btn_addCarbons_nutritionSetting"
+                app:layout_constraintTop_toBottomOf="@+id/txtCarbon_g_nutritionSetting" />
+
+            <ImageButton
+                android:id="@+id/btn_addCarbons_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:src="@drawable/add"
+                android:tint="@color/pastel_pink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_carbonKcal_nutritionSetting" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout37"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv3"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout36">
+
+            <TextView
+                android:id="@+id/txt_proteinName_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="Protein"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_protein_g_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/cabin"
+                android:text="288g g"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/txt_proteinName_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_protein_de_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="40%"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toStartOf="@+id/txt_proteinKcal_nutritionSetting"
+                app:layout_constraintStart_toEndOf="@+id/txt_protein_g_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_proteinKcal_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="1152 kcal"
+                android:textColor="@color/pastel_blue"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <ImageButton
+                android:id="@+id/btn_minusProtein_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:tint="@color/pastel_blue"
+                android:src="@drawable/minus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_proteinName_nutritionSetting" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Protein"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:progressTint="@color/pastel_blue"
+                android:thumbTint="@color/pastel_blue"
+                app:layout_constraintEnd_toStartOf="@+id/btn_addProtein_nutritionSetting"
+                app:layout_constraintStart_toEndOf="@+id/btn_minusProtein_nutritionSetting"
+                app:layout_constraintTop_toBottomOf="@+id/txt_protein_g_nutritionSetting" />
+
+            <ImageButton
+                android:id="@+id/btn_addProtein_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:src="@drawable/add"
+                android:tint="@color/pastel_blue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_proteinKcal_nutritionSetting" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout38"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout37">
+
+            <TextView
+                android:id="@+id/txt_fatName_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="Fat"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_fat_g_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="48dp"
+
+                android:fontFamily="@font/cabin"
+                android:text="288g g"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintStart_toEndOf="@+id/txt_fatName_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txt_fat_de_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="40%"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintEnd_toStartOf="@+id/txt_fatKcal_nutritionSetting"
+                app:layout_constraintStart_toEndOf="@+id/txt_fat_g_nutritionSetting"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/txt_fatKcal_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cabin"
+                android:text="1152 kcal"
+                android:textColor="@color/pastel_green"
+                android:textSize="@dimen/text_size"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageButton
+                android:id="@+id/btn_minusFat_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:tint="@color/pastel_green"
+                android:src="@drawable/minus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_fatName_nutritionSetting" />
+
+            <SeekBar
+                android:id="@+id/seekBar_Fat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv2"
+                android:progressTint="@color/pastel_green"
+                android:thumbTint="@color/pastel_green"
+                app:layout_constraintEnd_toStartOf="@+id/btn_addFat_nutritionSetting"
+                app:layout_constraintStart_toEndOf="@+id/btn_minusFat_nutritionSetting"
+                app:layout_constraintTop_toBottomOf="@+id/txt_fat_g_nutritionSetting" />
+
+            <ImageButton
+                android:id="@+id/btn_addFat_nutritionSetting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distance_lv2"
+                android:layout_marginVertical="@dimen/distance_lv1"
+                android:background="@color/white"
+                android:tint="@color/pastel_green"
+                android:src="@drawable/add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_fatKcal_nutritionSetting" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/btn_save_nutritionSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/distance_lv2"
+            android:backgroundTint="@color/lv2"
+            android:fontFamily="@font/itim"
+            android:text="Save"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout38" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
